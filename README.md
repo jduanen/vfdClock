@@ -1,4 +1,8 @@
-VFD Time/Temp
+# VFD Time/Temp
+
+*TBD*
+
+===========================================================================
 
 * concept
   - two rows: top time, bottom temp
