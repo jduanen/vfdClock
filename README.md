@@ -2,6 +2,8 @@
 
 *TBD*
 
+![VFD Clock](vfdClock.png)
+
 ===========================================================================
 
 * concept
@@ -60,7 +62,12 @@
           - 25.2V output -> 252mA = 6.3W output
           - 5V @ 1.53A input = 7.65W input
           - 1.35W dissipation -> coil <50C after short time
-    * 3.15VAC @ 164mA = 517mW: filament
+    * Filament Supply
+      - 3.15VAC @ 164mA = 517mW
+      - Digit Unit: R_f = 4.7ohm
+      - Dot Unit: R_f = 15ohm
+      - Module (4x Digits + 1x Dot): 0.9ohm
+      - current limiting resistance of ~20ohms
       - ~2.5W for five display units
         * can wire all filaments in parallel
           - probably can have common current limiting resistor for all
@@ -87,6 +94,13 @@
           - use small valued (O(1ohm)) resistors instead of pots on each leg of the output
           - can use back-to-back polarized 47uF caps in series
             * to effectively get a ~22uF non-polarized cap
+      - buck converter
+        * 6-24V input, 5.1-5.2V output @ 3A @ 30C (needs heat sink), 2.1A (w/o heatsink)
+        * 500KHz switching frequency
+        * OVP 1.5A fuse
+        * 0.85mA static current
+        * red LED power-on indication
+        * might have resistors to indicate USB current output?
 
 
 * ILC1-1/8 Tube

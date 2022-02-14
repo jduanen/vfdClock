@@ -80,7 +80,7 @@ Wire Wire Line
 Text GLabel 2800 6750 0    50   Input ~ 0
 Dot
 $Comp
-L Connector:Conn_01x17_Female J3
+L Connector:Conn_01x17_Female J
 U 1 1 62203302
 P 3600 6450
 F 0 "J" H 3600 7350 50  0000 C CNN
@@ -459,7 +459,7 @@ Wire Wire Line
 	3650 4850 5750 4850
 Connection ~ 3650 4850
 $Comp
-L jdn_symbols:ILT1-5L U8
+L jdn_symbols:ILT1-5L U
 U 1 1 62045209
 P 5950 3000
 F 0 "U" H 5950 3600 50  0000 C CNN

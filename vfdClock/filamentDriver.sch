@@ -386,7 +386,7 @@ L Device:D_Zener D1
 U 1 1 6209B4E9
 P 8100 5350
 F 0 "D1" V 8054 5430 50  0000 L CNN
-F 1 "D_Zener" V 8145 5430 50  0000 L CNN
+F 1 "1N4732A 4.7V" V 8145 5430 50  0000 L CNN
 F 2 "" H 8100 5350 50  0001 C CNN
 F 3 "~" H 8100 5350 50  0001 C CNN
 	1    8100 5350
@@ -421,23 +421,10 @@ P 8100 3400
 AR Path="/620AE81A" Ref="R?"  Part="1" 
 AR Path="/620162F8/620AE81A" Ref="R7"  Part="1" 
 F 0 "R7" H 8170 3446 50  0000 L CNN
-F 1 "R" H 8170 3355 50  0000 L CNN
+F 1 "380" H 8170 3355 50  0000 L CNN
 F 2 "" V 8030 3400 50  0001 C CNN
 F 3 "~" H 8100 3400 50  0001 C CNN
 	1    8100 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 620AE822
-P 8100 2550
-AR Path="/620AE822" Ref="#PWR?"  Part="1" 
-AR Path="/620162F8/620AE822" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 8100 2400 50  0001 C CNN
-F 1 "+5V" H 8115 2723 50  0000 C CNN
-F 2 "" H 8100 2550 50  0001 C CNN
-F 3 "" H 8100 2550 50  0001 C CNN
-	1    8100 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -447,4 +434,6 @@ Wire Wire Line
 Connection ~ 8100 4450
 Text GLabel 8850 4900 2    50   Input ~ 0
 V_filament-
+Text GLabel 8100 2550 1    50   Input ~ 0
+V_grid
 $EndSCHEMATC
