@@ -135,6 +135,10 @@
     * x
     * 14: Filament2
     * 15: Filament2
+  - example
+    * V_g: 20V @ 50mA
+    * V_s: 20V @ 4mA per segment (~30mA all segments on)
+    * V_f: 3.15V @ 150mA
 
 * ILT1-5L Tube
   - 5x dots
@@ -230,6 +234,7 @@
     * https://www.thevfdcollective.com/blog/vfdclockdesign-pt1
   - ICL1-1/8 tube info
     * http://kevinrye.net/index_files/more_vfds.php
+    * https://playground2014.wordpress.com/2016/04/04/the-tube-icl-1-18/
   - driving VFD tubes
     * https://hackaday.io/project/85499-osh-vfd-watch/log/119364-how-to-properly-drive-vfd
   - ILT1-5L tube info
@@ -237,6 +242,6 @@
     * http://kevinrye.net/index_files/more_vfds.php
   - Russian tube books
     * http://www.tube-tester.com/sites/nixie/dat_arch.htm
-
+  - 
 
 
