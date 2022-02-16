@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -36,55 +36,33 @@ Wire Wire Line
 Connection ~ 1000 3350
 Wire Wire Line
 	1000 3350 1000 3200
-Text GLabel 3150 7250 0    50   Input ~ 0
-Grid2
 Wire Wire Line
 	1200 3200 1000 3200
 Wire Wire Line
 	1000 3200 1000 3000
 Connection ~ 1000 3200
-Text GLabel 3150 6350 0    50   Input ~ 0
-Grid3
-Text GLabel 3150 6950 0    50   Input ~ 0
-Grid1
-Text GLabel 3150 6050 0    50   Input ~ 0
-Grid0
 Wire Wire Line
 	2500 2600 2300 2600
-Text GLabel 2550 6150 0    50   Input ~ 0
-SegA
 Wire Wire Line
 	2500 2750 2300 2750
-Text GLabel 2550 6250 0    50   Input ~ 0
-SegB
 Wire Wire Line
 	2500 2900 2300 2900
 Wire Wire Line
 	2500 3050 2300 3050
-Text GLabel 2550 6650 0    50   Input ~ 0
-SegD
 Wire Wire Line
 	2500 3200 2300 3200
-Text GLabel 2550 6850 0    50   Input ~ 0
-SegE
 Wire Wire Line
 	2500 3350 2300 3350
-Text GLabel 2550 5950 0    50   Input ~ 0
-SegF
 Wire Wire Line
 	2500 3500 2300 3500
-Text GLabel 2550 6450 0    50   Input ~ 0
-SegG
 Wire Wire Line
 	2550 3700 2300 3700
-Text GLabel 2800 6750 0    50   Input ~ 0
-Dot
 $Comp
 L Connector:Conn_01x17_Female J
 U 1 1 62203302
 P 3600 6450
 F 0 "J" H 3600 7350 50  0000 C CNN
-F 1 "Conn_01x17_Female" H 3600 5550 50  0000 C CNN
+F 1 "Display Module Edge Connector" H 3600 5550 50  0000 C CNN
 F 2 "" H 3600 6450 50  0001 C CNN
 F 3 "~" H 3600 6450 50  0001 C CNN
 	1    3600 6450
@@ -128,10 +106,6 @@ Connection ~ 2100 4600
 Wire Wire Line
 	850  4600 1950 4600
 Connection ~ 1950 4600
-Text GLabel 2350 5650 0    50   Input ~ 0
-V_filament+
-Text GLabel 2350 7150 0    50   Input ~ 0
-V_filament-
 Wire Wire Line
 	2350 5650 3150 5650
 Wire Wire Line
@@ -172,8 +146,6 @@ Wire Wire Line
 	2550 5950 3400 5950
 Wire Wire Line
 	2550 6450 3400 6450
-Text GLabel 2550 6550 0    50   Input ~ 0
-SegC
 Text Label 1000 3000 2    50   ~ 0
 4C
 Wire Wire Line
@@ -184,8 +156,6 @@ Wire Wire Line
 	3150 6950 3400 6950
 Wire Wire Line
 	3150 7250 3400 7250
-Text GLabel 2900 5850 0    50   Input ~ 0
-Grid4
 Wire Wire Line
 	2900 5850 3400 5850
 Text Label 2500 2600 0    50   ~ 0
@@ -520,4 +490,34 @@ Wire Wire Line
 Connection ~ 6200 4600
 Wire Wire Line
 	6200 4600 8250 4600
+Text HLabel 2350 5650 0    50   Input ~ 0
+V_filament+
+Text HLabel 2350 7150 0    50   Input ~ 0
+V_filament-
+Text HLabel 2550 5950 0    50   Input ~ 0
+SegF
+Text HLabel 2550 6150 0    50   Input ~ 0
+SegA
+Text HLabel 2550 6250 0    50   Input ~ 0
+SegB
+Text HLabel 2550 6450 0    50   Input ~ 0
+SegG
+Text HLabel 2550 6550 0    50   Input ~ 0
+SegC
+Text HLabel 2550 6650 0    50   Input ~ 0
+SegD
+Text HLabel 2550 6850 0    50   Input ~ 0
+SegE
+Text HLabel 2900 5850 0    50   Input ~ 0
+Grid4
+Text HLabel 3150 6050 0    50   Input ~ 0
+Grid0
+Text HLabel 3150 6350 0    50   Input ~ 0
+Grid3
+Text HLabel 2800 6750 0    50   Input ~ 0
+Dot
+Text HLabel 3150 6950 0    50   Input ~ 0
+Grid1
+Text HLabel 3150 7250 0    50   Input ~ 0
+Grid0
 $EndSCHEMATC

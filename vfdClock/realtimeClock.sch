@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -227,4 +227,121 @@ Wire Wire Line
 Connection ~ 3400 3950
 Wire Wire Line
 	3400 3950 3400 4050
+$Comp
+L Connector:Conn_01x06_Male J?
+U 1 1 621AF3D6
+P 2550 6550
+F 0 "J?" H 2550 6000 50  0000 C CNN
+F 1 "RTC and EPROM Module Interface" H 2550 6100 50  0000 C CNN
+F 2 "" H 2550 6550 50  0001 C CNN
+F 3 "~" H 2550 6550 50  0001 C CNN
+	1    2550 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 621B19E4
+P 2100 6850
+AR Path="/621B19E4" Ref="#PWR?"  Part="1" 
+AR Path="/621C007B/621B19E4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2100 6600 50  0001 C CNN
+F 1 "GND" H 2105 6677 50  0000 C CNN
+F 2 "" H 2100 6850 50  0001 C CNN
+F 3 "" H 2100 6850 50  0001 C CNN
+	1    2100 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6750 2100 6750
+Wire Wire Line
+	2100 6750 2100 6850
+$Comp
+L power:+5V #PWR?
+U 1 1 621B35DA
+P 1150 6500
+AR Path="/621B35DA" Ref="#PWR?"  Part="1" 
+AR Path="/621C007B/621B35DA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1150 6350 50  0001 C CNN
+F 1 "+5V" H 1165 6673 50  0000 C CNN
+F 2 "" H 1150 6500 50  0001 C CNN
+F 3 "" H 1150 6500 50  0001 C CNN
+	1    1150 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6650 1150 6650
+Wire Wire Line
+	1150 6650 1150 6500
+Text HLabel 2150 6550 0    50   BiDi ~ 0
+SDA
+Text HLabel 2150 6450 0    50   Input ~ 0
+SCL
+Text HLabel 2150 6350 0    50   Input ~ 0
+SQW
+Text HLabel 2150 6250 0    50   Input ~ 0
+32K
+Wire Wire Line
+	2350 6550 2150 6550
+Wire Wire Line
+	2350 6450 2150 6450
+Wire Wire Line
+	2350 6350 2150 6350
+Wire Wire Line
+	2350 6250 2150 6250
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 621B85AA
+P 4750 6450
+F 0 "J?" H 4700 6650 50  0000 L CNN
+F 1 "RTC EPROM Power" H 4350 6550 50  0000 L CNN
+F 2 "" H 4750 6450 50  0001 C CNN
+F 3 "~" H 4750 6450 50  0001 C CNN
+	1    4750 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 621BE803
+P 4300 6750
+AR Path="/621BE803" Ref="#PWR?"  Part="1" 
+AR Path="/621C007B/621BE803" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4300 6500 50  0001 C CNN
+F 1 "GND" H 4305 6577 50  0000 C CNN
+F 2 "" H 4300 6750 50  0001 C CNN
+F 3 "" H 4300 6750 50  0001 C CNN
+	1    4300 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6550 4300 6550
+Wire Wire Line
+	4300 6550 4300 6750
+$Comp
+L power:+5V #PWR?
+U 1 1 621BF10E
+P 4200 6250
+AR Path="/621BF10E" Ref="#PWR?"  Part="1" 
+AR Path="/621C007B/621BF10E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4200 6100 50  0001 C CNN
+F 1 "+5V" H 4215 6423 50  0000 C CNN
+F 2 "" H 4200 6250 50  0001 C CNN
+F 3 "" H 4200 6250 50  0001 C CNN
+	1    4200 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6450 4200 6450
+Wire Wire Line
+	4200 6450 4200 6250
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 621B957A
+P 6450 6450
+F 0 "J?" H 6400 6650 50  0000 L CNN
+F 1 "RTC EPROM I2C" H 6050 6550 50  0000 L CNN
+F 2 "" H 6450 6450 50  0001 C CNN
+F 3 "~" H 6450 6450 50  0001 C CNN
+	1    6450 6450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

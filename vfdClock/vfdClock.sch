@@ -14,302 +14,199 @@ Comment3 ""
 Comment4 "MIT LIcense"
 $EndDescr
 $Sheet
-S 4900 950  2200 600 
-U 620162F8
-F0 "filamentDriver" 50
-F1 "filamentDriver.sch" 50
-$EndSheet
-$Comp
-L Connector:Conn_01x02_Female J2
-U 1 1 6201BD6F
-P 1450 7000
-F 0 "J2" H 1342 6675 50  0000 C CNN
-F 1 "Power" H 1342 6766 50  0000 C CNN
-F 2 "" H 1450 7000 50  0001 C CNN
-F 3 "~" H 1450 7000 50  0001 C CNN
-	1    1450 7000
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR02
-U 1 1 6201BD75
-P 2550 6500
-F 0 "#PWR02" H 2550 6350 50  0001 C CNN
-F 1 "+5V" H 2565 6673 50  0000 C CNN
-F 2 "" H 2550 6500 50  0001 C CNN
-F 3 "" H 2550 6500 50  0001 C CNN
-	1    2550 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 6201BD7B
-P 2550 7350
-F 0 "#PWR01" H 2550 7100 50  0001 C CNN
-F 1 "GND" H 2555 7177 50  0000 C CNN
-F 2 "" H 2550 7350 50  0001 C CNN
-F 3 "" H 2550 7350 50  0001 C CNN
-	1    2550 7350
-	1    0    0    -1  
-$EndComp
-$Sheet
-S 2150 2100 2200 600 
-U 620B4DCC
-F0 "gridSupply" 50
-F1 "gridSupply.sch" 50
-$EndSheet
-$Comp
-L Connector:USB_B_Micro J1
-U 1 1 620E2F1A
-P 950 6150
-F 0 "J1" H 1007 6617 50  0000 C CNN
-F 1 "USB_B_Micro" H 1007 6526 50  0000 C CNN
-F 2 "" H 1100 6100 50  0001 C CNN
-F 3 "~" H 1100 6100 50  0001 C CNN
-	1    950  6150
-	1    0    0    -1  
-$EndComp
-$Sheet
-S 2150 3050 2200 600 
-U 620E4951
-F0 "segmentSupply" 50
-F1 "segmentSupply.sch" 50
-$EndSheet
-$Sheet
-S 7150 5250 2400 650 
-U 621C007B
-F0 "realtimeClock" 50
-F1 "realtimeClock.sch" 50
-$EndSheet
-$Sheet
-S 5700 2500 800  1800
-U 620E745C
-F0 "controller" 50
-F1 "controller.sch" 50
-$EndSheet
-$Sheet
-S 8750 2500 750  1850
+S 8750 2500 700  1700
 U 620E737D
 F0 "displayModule" 50
 F1 "displayModule.sch" 50
+F2 "V_filament+" I L 8750 2600 50 
+F3 "V_filament-" I L 8750 2700 50 
+F4 "Digit3" I L 8750 2850 50 
+F5 "Digit2" I L 8750 2950 50 
+F6 "Dots" I L 8750 3050 50 
+F7 "Digit1" I L 8750 3150 50 
+F8 "Digit0" I L 8750 3250 50 
+F9 "SegG" I L 8750 3400 50 
+F10 "SegF" I L 8750 3500 50 
+F11 "SegE" I L 8750 3600 50 
+F12 "SegD" I L 8750 3700 50 
+F13 "SegC" I L 8750 3800 50 
+F14 "SegB" I L 8750 3900 50 
+F15 "SegA" I L 8750 4000 50 
+F16 "DP" I L 8750 4100 50 
 $EndSheet
-Wire Wire Line
-	1250 5950 2100 5950
-Wire Wire Line
-	2100 5950 2100 6900
-Wire Wire Line
-	2100 6900 1650 6900
-Wire Wire Line
-	2100 6900 2550 6900
-Wire Wire Line
-	2550 6900 2550 6500
-Connection ~ 2100 6900
-Wire Wire Line
-	2550 7350 2550 7000
-Wire Wire Line
-	2550 7000 1950 7000
-Wire Wire Line
-	950  6550 1950 6550
-Wire Wire Line
-	1950 6550 1950 7000
-Connection ~ 1950 7000
-Wire Wire Line
-	1950 7000 1650 7000
-Text HLabel 4350 2400 0    50   Input ~ 0
-V_grid
-Text HLabel 4350 3350 0    50   Input ~ 0
-V_segment
-Text HLabel 6500 3800 0    50   Input ~ 0
-SegA
-Text HLabel 6500 3700 0    50   Input ~ 0
-SegB
-Text HLabel 6500 3600 0    50   Input ~ 0
-SegC
-Text HLabel 6500 3500 0    50   Input ~ 0
-SegD
-Text HLabel 6500 3400 0    50   Input ~ 0
-SegE
-Text HLabel 6500 3300 0    50   Input ~ 0
-SegF
-Text HLabel 6500 3200 0    50   Input ~ 0
-SegG
-Text HLabel 6500 3900 0    50   Input ~ 0
-DP
-Text HLabel 6500 3000 0    50   Input ~ 0
-Digit0
-Text HLabel 6500 2900 0    50   Input ~ 0
-Digit1
-Text HLabel 6500 2800 0    50   Input ~ 0
-Dots
-Text HLabel 6500 2700 0    50   Input ~ 0
-Digit2
-Text HLabel 6500 2600 0    50   Input ~ 0
-Digit3
-Text HLabel 6500 4100 0    50   Input ~ 0
-SCL
-Text HLabel 6500 4200 0    50   Input ~ 0
-SDA
-Text HLabel 7100 1150 0    50   Input ~ 0
-V_filament+
-Text HLabel 7100 1350 0    50   Input ~ 0
-V_filament-
-Text HLabel 4900 1250 2    50   Input ~ 0
-V_grid
-Text HLabel 5700 2650 2    50   Input ~ 0
-V_grid
-Text HLabel 5700 2800 2    50   Input ~ 0
-V_segment
-Text HLabel 8750 2600 2    50   Input ~ 0
-V_filament+
-Text HLabel 8750 2750 2    50   Input ~ 0
-V_filament-
-Text HLabel 8750 2950 2    50   Input ~ 0
-Digit3
-Text HLabel 8750 3050 2    50   Input ~ 0
-Digit2
-Text HLabel 8750 3150 2    50   Input ~ 0
-Dots
-Text HLabel 8750 3250 2    50   Input ~ 0
-Digit1
-Text HLabel 8750 3350 2    50   Input ~ 0
-Digit0
-Text HLabel 8750 3550 2    50   Input ~ 0
-SegG
-Text HLabel 8750 3650 2    50   Input ~ 0
-SegF
-Text HLabel 8750 3750 2    50   Input ~ 0
-SegE
-Text HLabel 8750 3850 2    50   Input ~ 0
-SegD
-Text HLabel 8750 3950 2    50   Input ~ 0
-SegC
-Text HLabel 8750 4050 2    50   Input ~ 0
-SegB
-Text HLabel 8750 4150 2    50   Input ~ 0
-SegA
-Text HLabel 8750 4250 2    50   Input ~ 0
-DP
-Wire Wire Line
-	8100 2600 8100 2950
-Wire Wire Line
-	8100 2950 8750 2950
-Wire Wire Line
-	8750 3050 8000 3050
-Wire Wire Line
-	8000 3050 8000 2700
-Wire Wire Line
-	7900 2800 7900 3150
-Wire Wire Line
-	7900 3150 8750 3150
-Wire Wire Line
-	8750 3250 7800 3250
-Wire Wire Line
-	7800 3250 7800 2900
-Wire Wire Line
-	7700 3000 7700 3350
-Wire Wire Line
-	7700 3350 8750 3350
-Wire Wire Line
-	7500 3550 8750 3550
-Wire Wire Line
-	7400 3300 7400 3650
-Wire Wire Line
-	7400 3650 8750 3650
-Wire Wire Line
-	8750 3750 7300 3750
-Wire Wire Line
-	7300 3750 7300 3400
-Wire Wire Line
-	7200 3500 7200 3850
-Wire Wire Line
-	7200 3850 8750 3850
-Wire Wire Line
-	8750 3950 7100 3950
-Wire Wire Line
-	7100 3950 7100 3600
-Wire Wire Line
-	7000 3700 7000 4050
-Wire Wire Line
-	7000 4050 8750 4050
-Wire Wire Line
-	6500 3700 7000 3700
-Wire Wire Line
-	6500 3600 7100 3600
-Wire Wire Line
-	6500 3500 7200 3500
-Wire Wire Line
-	6500 3400 7300 3400
-Wire Wire Line
-	6500 3300 7400 3300
-Wire Wire Line
-	6500 3200 7500 3200
-Wire Wire Line
-	7500 3200 7500 3550
-Wire Wire Line
-	6500 3000 7700 3000
-Wire Wire Line
-	6500 2900 7800 2900
-Wire Wire Line
-	6500 2800 7900 2800
-Wire Wire Line
-	6500 2700 8000 2700
-Wire Wire Line
-	6500 2600 8100 2600
-Wire Wire Line
-	6500 3800 6900 3800
-Wire Wire Line
-	6900 3800 6900 4150
-Wire Wire Line
-	6900 4150 8750 4150
-Wire Wire Line
-	8750 4250 6800 4250
-Wire Wire Line
-	6800 4250 6800 3900
-Wire Wire Line
-	6800 3900 6500 3900
-Wire Wire Line
-	4350 3350 4600 3350
-Wire Wire Line
-	4600 3350 4600 2800
-Wire Wire Line
-	4600 2800 5700 2800
 Wire Wire Line
 	5700 2650 4600 2650
 Wire Wire Line
-	4600 2650 4600 2400
+	4600 2650 4600 1900
 Wire Wire Line
-	4900 1250 4600 1250
+	5700 1250 4600 1250
 Wire Wire Line
-	4600 1250 4600 2400
-Connection ~ 4600 2400
+	4600 1250 4600 1900
+Connection ~ 4600 1900
 Wire Wire Line
-	4600 2400 4350 2400
+	4600 1900 4350 1900
 Wire Wire Line
-	7100 1350 8350 1350
+	7250 1350 8350 1350
 Wire Wire Line
-	8350 1350 8350 2750
+	8350 1350 8350 2700
 Wire Wire Line
-	8350 2750 8750 2750
+	8350 2700 8750 2700
 Wire Wire Line
 	8750 2600 8450 2600
 Wire Wire Line
 	8450 2600 8450 1150
 Wire Wire Line
-	7100 1150 8450 1150
-Text HLabel 7150 5450 2    50   Input ~ 0
-SCL
-Text HLabel 7150 5650 2    50   Input ~ 0
-SDA
+	7250 1150 8450 1150
 Wire Wire Line
 	7150 5450 6700 5450
 Wire Wire Line
-	6700 5450 6700 4100
+	6700 5450 6700 4250
 Wire Wire Line
-	6700 4100 6500 4100
+	6700 4250 6500 4250
 Wire Wire Line
-	6500 4200 6600 4200
+	6500 4350 6600 4350
 Wire Wire Line
-	6600 4200 6600 5650
+	6600 4350 6600 5650
 Wire Wire Line
 	6600 5650 7150 5650
+$Sheet
+S 2950 1700 1400 400 
+U 6215BCFA
+F0 "gridSegmentSupply.sch" 50
+F1 "gridSegmentSupply.sch" 50
+F2 "V_gridSegment" O R 4350 1900 50 
+$EndSheet
+$Sheet
+S 5700 950  1550 600 
+U 620162F8
+F0 "filamentDriver" 50
+F1 "filamentDriver.sch" 50
+F2 "V_gridSegment" I L 5700 1250 50 
+F3 "V_filament+" O R 7250 1150 50 
+F4 "V_filament-" O R 7250 1350 50 
+$EndSheet
+Wire Wire Line
+	6500 2850 8750 2850
+Wire Wire Line
+	6500 2950 8750 2950
+Wire Wire Line
+	6500 3050 8750 3050
+Wire Wire Line
+	6500 3150 8750 3150
+Wire Wire Line
+	6500 3250 8750 3250
+Wire Wire Line
+	6500 3400 8750 3400
+Wire Wire Line
+	6500 3500 8750 3500
+Wire Wire Line
+	6500 3600 8750 3600
+Wire Wire Line
+	6500 3700 8750 3700
+Wire Wire Line
+	6500 3800 8750 3800
+Wire Wire Line
+	6500 3900 8750 3900
+Wire Wire Line
+	6500 4000 8750 4000
+Wire Wire Line
+	6500 4100 8750 4100
+Text HLabel 4700 2225 0    40   Input ~ 0
+328P_RESET
+$Sheet
+S 7150 5250 1550 600 
+U 621C007B
+F0 "realtimeClock" 50
+F1 "realtimeClock.sch" 50
+F2 "SDA" B L 7150 5650 50 
+F3 "SCL" I L 7150 5450 50 
+$EndSheet
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 6201BD6F
+P 2150 5500
+F 0 "J2" H 2042 5175 50  0000 C CNN
+F 1 "Power" H 2042 5266 50  0000 C CNN
+F 2 "" H 2150 5500 50  0001 C CNN
+F 3 "~" H 2150 5500 50  0001 C CNN
+	1    2150 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 6201BD75
+P 3250 5000
+F 0 "#PWR02" H 3250 4850 50  0001 C CNN
+F 1 "+5V" H 3265 5173 50  0000 C CNN
+F 2 "" H 3250 5000 50  0001 C CNN
+F 3 "" H 3250 5000 50  0001 C CNN
+	1    3250 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 6201BD7B
+P 3250 5850
+F 0 "#PWR01" H 3250 5600 50  0001 C CNN
+F 1 "GND" H 3255 5677 50  0000 C CNN
+F 2 "" H 3250 5850 50  0001 C CNN
+F 3 "" H 3250 5850 50  0001 C CNN
+	1    3250 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 620E2F1A
+P 1650 4650
+F 0 "J1" H 1707 5117 50  0000 C CNN
+F 1 "USB_B_Micro" H 1707 5026 50  0000 C CNN
+F 2 "" H 1800 4600 50  0001 C CNN
+F 3 "~" H 1800 4600 50  0001 C CNN
+	1    1650 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4450 2800 4450
+Wire Wire Line
+	2800 4450 2800 5400
+Wire Wire Line
+	2800 5400 2350 5400
+Wire Wire Line
+	2800 5400 3250 5400
+Wire Wire Line
+	3250 5400 3250 5000
+Connection ~ 2800 5400
+Wire Wire Line
+	3250 5850 3250 5500
+Wire Wire Line
+	3250 5500 2650 5500
+Wire Wire Line
+	1650 5050 2650 5050
+Wire Wire Line
+	2650 5050 2650 5500
+Connection ~ 2650 5500
+Wire Wire Line
+	2650 5500 2350 5500
+$Sheet
+S 5700 2500 800  2000
+U 620E745C
+F0 "controller" 50
+F1 "controller.sch" 50
+F2 "V_gridSegment" I L 5700 2650 50 
+F3 "SDA" B R 6500 4350 50 
+F4 "SCL" O R 6500 4250 50 
+F5 "DP" O R 6500 4100 50 
+F6 "SegA" O R 6500 4000 50 
+F7 "SegB" O R 6500 3900 50 
+F8 "SegC" O R 6500 3800 50 
+F9 "SegD" O R 6500 3700 50 
+F10 "SegE" O R 6500 3600 50 
+F11 "SegF" O R 6500 3500 50 
+F12 "SegG" O R 6500 3400 50 
+F13 "Digit0" O R 6500 3250 50 
+F14 "Digit1" O R 6500 3150 50 
+F15 "Dots" O R 6500 3050 50 
+F16 "Digit2" O R 6500 2950 50 
+F17 "Digit3" O R 6500 2850 50 
+$EndSheet
 $EndSCHEMATC
