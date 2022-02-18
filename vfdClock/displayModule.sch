@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -58,11 +58,11 @@ Wire Wire Line
 Wire Wire Line
 	2550 3700 2300 3700
 $Comp
-L Connector:Conn_01x17_Female J
+L Connector:Conn_01x17_Female J3
 U 1 1 62203302
 P 3600 6450
-F 0 "J" H 3600 7350 50  0000 C CNN
-F 1 "Display Module Edge Connector" H 3600 5550 50  0000 C CNN
+F 0 "J3" H 3600 7500 50  0000 C CNN
+F 1 "Display Module Edge Connector" H 3600 7400 50  0000 C CNN
 F 2 "" H 3600 6450 50  0001 C CNN
 F 3 "~" H 3600 6450 50  0001 C CNN
 	1    3600 6450
@@ -75,23 +75,23 @@ H2
 Text Label 3400 5850 2    50   ~ 0
 H
 Text Label 3400 5950 2    50   ~ 0
-b
+SegF
 Text Label 3400 6050 2    50   ~ 0
 1C
 Text Label 3400 6150 2    50   ~ 0
-A
+SegA
 Text Label 3400 6250 2    50   ~ 0
-B
+SegB
 Text Label 3400 6350 2    50   ~ 0
 4C
 Text Label 3400 6450 2    50   ~ 0
-G
+SegG
 Text Label 3400 6550 2    50   ~ 0
-C
+SegC
 Text Label 3400 6650 2    50   ~ 0
-F
+SegF
 Text Label 3400 6850 2    50   ~ 0
-D
+SegD
 Text Label 3400 6950 2    50   ~ 0
 2C
 Text Label 3400 7050 2    50   ~ 0
@@ -129,9 +129,9 @@ H1
 Text Label 850  4850 2    50   ~ 0
 H2
 Text Label 3400 6750 2    50   ~ 0
-DP
+Dot
 Wire Wire Line
-	2800 6750 3400 6750
+	2550 6750 3400 6750
 Wire Wire Line
 	2550 6150 3400 6150
 Wire Wire Line
@@ -149,15 +149,15 @@ Wire Wire Line
 Text Label 1000 3000 2    50   ~ 0
 4C
 Wire Wire Line
-	3150 6050 3400 6050
+	3000 6050 3400 6050
 Wire Wire Line
-	3150 6350 3400 6350
+	3000 6350 3400 6350
 Wire Wire Line
-	3150 6950 3400 6950
+	3000 6950 3400 6950
 Wire Wire Line
-	3150 7250 3400 7250
+	3000 7250 3400 7250
 Wire Wire Line
-	2900 5850 3400 5850
+	3000 5850 3400 5850
 Text Label 2500 2600 0    50   ~ 0
 SegA
 Text Label 2500 2750 0    50   ~ 0
@@ -179,8 +179,8 @@ L jdn_symbols:ILC1-1_8 U?
 U 1 1 623AFCF7
 P 1750 3350
 AR Path="/623AFCF7" Ref="U?"  Part="1" 
-AR Path="/620E737D/623AFCF7" Ref="U"  Part="1" 
-F 0 "U" H 1750 4250 50  0000 C CNN
+AR Path="/620E737D/623AFCF7" Ref="U1"  Part="1" 
+F 0 "U1" H 1750 4250 50  0000 C CNN
 F 1 "ILC1-1_8" H 1750 4350 50  0000 C CNN
 F 2 "" H 1750 3350 50  0001 C CNN
 F 3 "" H 1750 3350 50  0001 C CNN
@@ -252,8 +252,8 @@ L jdn_symbols:ILC1-1_8 U?
 U 1 1 623E42FF
 P 3850 3350
 AR Path="/623E42FF" Ref="U?"  Part="1" 
-AR Path="/620E737D/623E42FF" Ref="U"  Part="1" 
-F 0 "U" H 3850 4250 50  0000 C CNN
+AR Path="/620E737D/623E42FF" Ref="U2"  Part="1" 
+F 0 "U2" H 3850 4250 50  0000 C CNN
 F 1 "ILC1-1_8" H 3850 4350 50  0000 C CNN
 F 2 "" H 3850 3350 50  0001 C CNN
 F 3 "" H 3850 3350 50  0001 C CNN
@@ -321,8 +321,8 @@ L jdn_symbols:ILC1-1_8 U?
 U 1 1 623E67CD
 P 10150 3350
 AR Path="/623E67CD" Ref="U?"  Part="1" 
-AR Path="/620E737D/623E67CD" Ref="U"  Part="1" 
-F 0 "U" H 10150 4250 50  0000 C CNN
+AR Path="/620E737D/623E67CD" Ref="U5"  Part="1" 
+F 0 "U5" H 10150 4250 50  0000 C CNN
 F 1 "ILC1-1_8" H 10150 4350 50  0000 C CNN
 F 2 "" H 10150 3350 50  0001 C CNN
 F 3 "" H 10150 3350 50  0001 C CNN
@@ -390,8 +390,8 @@ L jdn_symbols:ILC1-1_8 U?
 U 1 1 623E89F5
 P 8050 3350
 AR Path="/623E89F5" Ref="U?"  Part="1" 
-AR Path="/620E737D/623E89F5" Ref="U"  Part="1" 
-F 0 "U" H 8050 4250 50  0000 C CNN
+AR Path="/620E737D/623E89F5" Ref="U4"  Part="1" 
+F 0 "U4" H 8050 4250 50  0000 C CNN
 F 1 "ILC1-1_8" H 8050 4350 50  0000 C CNN
 F 2 "" H 8050 3350 50  0001 C CNN
 F 3 "" H 8050 3350 50  0001 C CNN
@@ -429,10 +429,10 @@ Wire Wire Line
 	3650 4850 5750 4850
 Connection ~ 3650 4850
 $Comp
-L jdn_symbols:ILT1-5L U
+L jdn_symbols:ILT1-5L U3
 U 1 1 62045209
 P 5950 3000
-F 0 "U" H 5950 3600 50  0000 C CNN
+F 0 "U3" H 5950 3600 50  0000 C CNN
 F 1 "ILT1-5L" H 5950 3700 50  0000 C CNN
 F 2 "" H 5950 3000 50  0001 C CNN
 F 3 "" H 5950 3000 50  0001 C CNN
@@ -508,16 +508,16 @@ Text HLabel 2550 6650 0    50   Input ~ 0
 SegD
 Text HLabel 2550 6850 0    50   Input ~ 0
 SegE
-Text HLabel 2900 5850 0    50   Input ~ 0
-Grid4
-Text HLabel 3150 6050 0    50   Input ~ 0
-Grid0
-Text HLabel 3150 6350 0    50   Input ~ 0
-Grid3
-Text HLabel 2800 6750 0    50   Input ~ 0
-Dot
-Text HLabel 3150 6950 0    50   Input ~ 0
-Grid1
-Text HLabel 3150 7250 0    50   Input ~ 0
-Grid0
+Text HLabel 3000 6950 0    50   Input ~ 0
+Digit1
+Text HLabel 2550 6750 0    50   Input ~ 0
+DP
+Text HLabel 3000 6350 0    50   Input ~ 0
+Digit3
+Text HLabel 3000 6050 0    50   Input ~ 0
+Digit0
+Text HLabel 3000 7250 0    50   Input ~ 0
+Digit2
+Text HLabel 3000 5850 0    50   Input ~ 0
+Dots
 $EndSCHEMATC
